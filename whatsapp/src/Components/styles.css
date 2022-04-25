@@ -2,46 +2,37 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
-    
 }
 
 h1 {
-    color: white;
+    display: inline-block;
+    color: rgb(220,220,220);
+    width: 100%;
+}
+p {
+    display: inline-block;
+    color: rgb(150, 150, 150);
 }
 .app {
     height: 100vh;
     width: 100vw;
-}
-.left{
-    display: inline-block;
-    height: 100%;
-    width: 70%;
+    display: flex;
+
 }
 
 .sidebar {
-    display: inline-block;
-    position: relative;
+    display: flex;
     height: 100%;
     width: 30%;
     background-color: purple;
+    flex-direction: column;
 }
 .Topbar {
-    position: relative;
+    display: block;
     height: 40px;
     width: 100%;
-    background-color: greenyellow;
+    background-color: rgb(120, 120, 120);
     text-align: right;
-}
-.avatar {
-    /* position: relative; */
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: grey;
-    background-image: url('Whatsapp.jpeg');
-    background-size: cover;
-    display: inline-block;
-    /* background-position: center; */
     
 }
 .SeekerBack {
@@ -51,33 +42,44 @@ h1 {
     padding: 5px 10px;
     box-sizing: border-box;
     text-align: left;
-    background-color: lightseagreen;
+    background-color: rgba(2, 63, 1, 0.384);
 }
 
 .Search{
-    position:absolute;
-    /* border-radius: 25em; */
-    display: block;
+    border-radius: 25em;
+    height: 100%;
     width: 100%;
-    background-color:lightslategray;
+    background-color: rgb(120, 120, 120);
     box-sizing: border-box;
-    text-align: left;
-    color:whitesmoke;
+    border: none;
+    padding: 5px 50px;
+    /* padding: preguntar cuanto tiene o fijarse en el whatsapweb ; */
+    
     
 }
 .Search::placeholder{
-    color:whitesmoke
+    color: rgb(200,200,200);
     
 }
 .contacts{
+    display: flex;
+    flex-direction: column;
+    
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    background-color: red;
+    background-color: rgb(17, 36, 17);
 }
 .contact{
-    height: auto;
+    display: flex;
+    height: 50px;
     width: auto;
+    
+}
+.left{
+    display: flex;
+    height: 100%;
+    width: 70%;
 }
 /* 
 .Top {

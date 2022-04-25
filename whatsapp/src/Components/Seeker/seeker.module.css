@@ -1,0 +1,27 @@
+
+.SeekerBack {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: rgba(2, 63, 1, 0.384);
+}
+
+.Search{
+    border-radius: 25em;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(120, 120, 120);
+    box-sizing: border-box;
+    border: none;
+    padding: 5px 50px;
+    /* padding: preguntar cuanto tiene o fijarse en el whatsapweb ; */
+    
+    
+}
+.Search::placeholder{
+    color: rgb(200,200,200);
+    
+}

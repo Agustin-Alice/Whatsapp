@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import "./styles.css";
+import "./topbar.module.css";
 // import Seeker from "./Components/Seeker";
 
 // const useStyle = makeStyles({

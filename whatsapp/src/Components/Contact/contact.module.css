@@ -1,0 +1,29 @@
+
+.avatar {
+    /* position: relative; */
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: grey;
+    background-image: url('Whatsapp.jpeg');
+    background-size: cover;
+    display: inline-block;
+    box-sizing: border-box;
+    /* background-position: center; */
+    
+}
+.avatarBack {
+    display: inline-block;
+    height: 100%;
+    width: 60px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    
+    
+}
+.contactText {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgb(120, 120, 120) ;
+}

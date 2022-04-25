@@ -1,0 +1,22 @@
+
+.Topbar {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(120, 120, 120);
+    text-align: right;
+    
+}
+.avatar {
+    /* position: relative; */
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: grey;
+    background-image: url('Whatsapp.jpeg');
+    background-size: cover;
+    display: inline-block;
+    box-sizing: border-box;
+    /* background-position: center; */
+    
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-
+import "./seeker.module.css";
+// import SearchIcon from "@mui/icons-material/Search";
 function Seeker() {
   return (
     <div className="SeekerBack">
