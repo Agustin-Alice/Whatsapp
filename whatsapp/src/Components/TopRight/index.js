@@ -1,19 +1,26 @@
 import React from "react";
-import "./styles.css";
-import DataUsageIcon from "@mui/icons-material/DataUsage";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import styles from "./topright.module.css";
+import VideoCallOutlinedIcon from "@mui/icons-material/VideoCallOutlined";
+import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
-function Top() {
+function TopRight() {
   return (
-    <div className="top">
-      {/* <img className="avatar"></img> */}
-      <div className="avatar"></div>
-      <DataUsageIcon />
-      <OpenInNewIcon />
-      <KeyboardArrowDownIcon />
+    <div className={styles.topRight}>
+      <div className={styles.avatarBack}>
+        <div className={styles.avatar}></div>
+      </div>
+      <div className={styles.contactInfo}>
+        <h1> Pablo Alice </h1>
+        <p> Online</p>
+      </div>
+      <div className={styles.calls}>
+        <VideoCallOutlinedIcon />
+        <CallOutlinedIcon />
+        <SearchOutlinedIcon />
+      </div>
     </div>
   );
 }
 
-export default Top;
+export default TopRight;

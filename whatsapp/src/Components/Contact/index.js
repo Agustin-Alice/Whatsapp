@@ -1,13 +1,13 @@
 import React from "react";
-import "./contact.module.css";
+import styles from "./contact.module.css";
 
 function Contact() {
   return (
-    <div className="contact">
-      <div className="avatarBack">
-        <div className="avatar"></div>
+    <div className={styles.contact}>
+      <div className={styles.avatarBack}>
+        <div className={styles.avatar}></div>
       </div>
-      <div className="contactText">
+      <div className={styles.contactText}>
         <h1> Pablo Alice </h1>
         <p> Ultimo mensaje</p>
       </div>

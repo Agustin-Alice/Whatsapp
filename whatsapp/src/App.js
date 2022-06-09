@@ -1,49 +1,34 @@
-import React from "react";
-// import DataUsageIcon from "@mui/icons-material/DataUsage";
-// import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import Contact from "./Components/Contact/index";
-import Seeker from "./Components/Seeker/index";
-// import Top from "./Components/Top/index";
+import React, { useEffect, useState, useRef } from "react";
 import Topbar from "./Components/Topbar/index";
-import "./Components/styles.css";
+import styles from "./app.module.css";
+import TopRight from "./Components/TopRight/index";
+import Chat from "./Components/Chat/index";
+import Chatbar from "./Components/Chatbar/index";
+import Contacts from "./Components/Contacts/index";
+// import { useEffect } from "react";
 
 function App() {
+  // let handleChannel = (result) => {
+  //   console.log(result);
+  // };
+
+  // useEffect(() => {
+  //   fetch("localhost:5000/")
+  //     .then((res) => res.json)
+  //     .then((result) => handleChannel);
+  // }, []);
+
   return (
-    <div className="app">
-      <div className="sidebar">
-        <Topbar></Topbar>
-        <div className="contacts">
-          <Seeker />
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-          <Contact></Contact>
-        </div>
+    <div className={styles.app}>
+      <div className={styles.sidebar}>
+        <Topbar />
+        <Contacts />
       </div>
-      <div className="right"></div>
-      {/* <Top /> */}
+      <div className={styles.right}>
+        <TopRight />
+        <Chat />
+        <Chatbar />
+      </div>
     </div>
   );
 }

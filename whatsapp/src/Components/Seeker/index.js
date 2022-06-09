@@ -1,10 +1,13 @@
 import React from "react";
-import "./seeker.module.css";
+import styles from "./seeker.module.css";
 // import SearchIcon from "@mui/icons-material/Search";
 function Seeker() {
   return (
-    <div className="SeekerBack">
-      <input className="Search" placeholder="Search or start new chat"></input>
+    <div className={styles.SeekerBack}>
+      <input
+        className={styles.Search}
+        placeholder="Search or start new chat"
+      ></input>
     </div>
   );
 }

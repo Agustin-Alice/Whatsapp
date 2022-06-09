@@ -4,25 +4,12 @@ import { makeStyles } from "@material-ui/core";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import "./topbar.module.css";
-// import Seeker from "./Components/Seeker";
-
-// const useStyle = makeStyles({
-//   sideBar: {
-//     display: "block",
-//     backgroundColor: "red",
-//     opacity: "0.6",
-//     height: "20vh",
-//     width: "100vw",
-//   },
-// });
+import styles from "./topbar.module.css";
 
 function Topbar() {
-  // const classes = useStyle();
   return (
-    <div className="Topbar">
-      <div className="avatar"></div>
-      {/* <Seeker></Seeker> */}
+    <div className={styles.Topbar}>
+      <div className={styles.avatar}></div>
       <DataUsageIcon />
       <OpenInNewIcon></OpenInNewIcon>
       <KeyboardArrowDownIcon></KeyboardArrowDownIcon>

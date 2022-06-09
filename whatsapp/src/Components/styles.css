@@ -1,9 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     font-size: 14px;
-}
-
+} */
+/* 
 h1 {
     display: inline-block;
     color: rgb(220,220,220);
@@ -26,36 +26,6 @@ p {
     width: 30%;
     background-color: purple;
     flex-direction: column;
-}
-.Topbar {
-    display: block;
-    height: 40px;
-    width: 100%;
-    background-color: rgb(120, 120, 120);
-    text-align: right;
-    
-}
-.SeekerBack {
-    position: relative;
-    height: 40px;
-    width: 100%;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    text-align: left;
-    background-color: rgba(2, 63, 1, 0.384);
-}
-
-.Search{
-    border-radius: 25em;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(120, 120, 120);
-    box-sizing: border-box;
-    border: none;
-    padding: 5px 50px;
-    /* padding: preguntar cuanto tiene o fijarse en el whatsapweb ; */
-    
-    
 }
 .Search::placeholder{
     color: rgb(200,200,200);
@@ -90,4 +60,4 @@ p {
     background-color: red;
     outline: 1px solid grey;
     text-align: right;   
-} */
+} */ 

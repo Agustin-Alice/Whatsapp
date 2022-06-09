@@ -21,6 +21,13 @@
     
     
 }
+
+.contact{
+    display: flex;
+    height: 50px;
+    width: auto;
+    
+}
 .contactText {
     display: inline-block;
     height: 100%;
