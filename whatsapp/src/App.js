@@ -12,11 +12,11 @@ function App() {
   //   console.log(result);
   // };
 
-  // useEffect(() => {
-  //   fetch("localhost:5000/")
-  //     .then((res) => res.json)
-  //     .then((result) => handleChannel);
-  // }, []);
+  useEffect(() => {
+    fetch("localhost:3002/api/messages")
+      .then((res) => res.json)
+      .then((result) => console.log(result));
+  }, []);
 
   return (
     <div className={styles.app}>
@@ -43,7 +43,7 @@ export default App;
 //   width: "30vw",
 //   height: "100vh",
 //   color: "red",
-//   backgroundColor: "black",
+//   backgroundColor: "black",a
 //   left: "0",
 // },
 // sidebarLeft: {
