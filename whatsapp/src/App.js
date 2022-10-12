@@ -12,11 +12,11 @@ function App() {
   //   console.log(result);
   // };
 
-  useEffect(() => {
-    fetch("localhost:3002/api/messages")
-      .then((res) => res.json)
-      .then((result) => console.log(result));
-  }, []);
+  // useEffect(() => {
+  //   fetch("localhost:3002/api/messages")
+  //     .then((res) => res.json)
+  //     .then((result) => console.log(result));
+  // }, []);
 
   return (
     <div className={styles.app}>
