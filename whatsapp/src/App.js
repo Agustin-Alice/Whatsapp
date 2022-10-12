@@ -13,9 +13,9 @@ function App() {
   // };
 
   // useEffect(() => {
-  //   fetch("localhost:5000/")
+  //   fetch("localhost:3002/api/messages")
   //     .then((res) => res.json)
-  //     .then((result) => handleChannel);
+  //     .then((result) => console.log(result));
   // }, []);
 
   return (
@@ -43,7 +43,7 @@ export default App;
 //   width: "30vw",
 //   height: "100vh",
 //   color: "red",
-//   backgroundColor: "black",
+//   backgroundColor: "black",a
 //   left: "0",
 // },
 // sidebarLeft: {
