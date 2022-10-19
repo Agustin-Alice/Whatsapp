@@ -5,7 +5,8 @@ const client = new Client({
   host: "localhost",
   port: 5432,
   user: "postgres",
-  password: "elogse04dn",
+  password: "Elogse04dn",
+  database: "messages",
 });
 
 let messages = [
@@ -14,7 +15,7 @@ let messages = [
     text: "Hello Word",
     creator_by_id: 2,
     channel_id: 5,
-    created_at: " ", // aca iria la hora o el dia?
+    // created_at: " ", // aca iria la hora o el dia?
   },
 ];
 
@@ -29,9 +30,17 @@ client
 
     // app.get("/api/messages/:id", (req, res) => {});
 
-    app.post("/api/messages", (req, res) => {
-      const message = req.body;
-      res.json(message);
+    // app.post("/api/messages", (req, res) => {
+    //   const message = req.body;
+    //   res.json(message);
+    // });
+
+    const query = "INSERT INTO messages VALUES($1, $2) RETURNING *";
+    const values = messages;
+    app.post("/createmessage", (req, res) => {
+      client.query(query, values).then((res) => {
+        console.log(res.rows[0]);
+      });
     });
 
     app.get("/", (req, res) => {
