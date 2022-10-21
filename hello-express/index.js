@@ -35,12 +35,14 @@ client
     //   res.json(message);
     // });
 
-    const query = "INSERT INTO messages VALUES($1, $2) RETURNING *";
+    const querys = "INSERT INTO messages VALUES($1, $2)";
     const values = messages;
-    app.post("/createmessage", (req, res) => {
-      client.query(query, values).then((res) => {
+    app.post("/", (req, res) => {
+      const result = client.query(querys, values).then((res) => {
         console.log(res.rows[0]);
       });
+      console.log(result);
+      res.json(messages);
     });
 
     app.get("/", (req, res) => {
