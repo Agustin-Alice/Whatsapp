@@ -5,11 +5,10 @@ const client = new Client({
   host: "localhost",
   port: 5432,
   user: "agustin_alice",
-  password: "elogse04dn",
-  // database: "postgres",
+  database: "postgres",
 });
 
-let messages = [
+let message = [
   {
     id: 1,
     text: "Hello Word",
@@ -18,9 +17,14 @@ let messages = [
     created_at: " ", // aca iria la hora o el dia? ambos despues de que pase mas de un dia aparce la fecha y fue
   },
 ];
-console.log("hasta aca corre");
+
+const messageRequest = (req) => {
+  // client.query("INSERT INTO messages () ");
+};
+// console.log("hasta aca corre");
 client
   .connect()
+  // client.query()
   .then(() => console.log("connected"))
   .then(() => {
     const app = express();
@@ -31,15 +35,19 @@ client
     // app.get("/api/messages/:id", (req, res) => {});
 
     app.post("/api/messages", (req, res) => {
-      const message = req.body;
-      res.json(message);
+      console.log(req);
+      // const message = req.body;
+      const result = messageRequest(req.body);
+      res.json(result);
+      // res.json(message);
     });
 
     app.get("/", (req, res) => {
       // recibe json responde con json
-      res.json(messages);
+      res.json(message);
     });
 
     app.listen(PORT, () => console.log("server is listening on port " + PORT));
   })
   .catch((err) => console.error("connection error", err.stack));
+console.log("console final funcionando");
