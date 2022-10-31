@@ -4,8 +4,9 @@ const { Client } = require("pg");
 const client = new Client({
   host: "localhost",
   port: 5432,
-  user: "postgres",
+  user: "agustin_alice",
   password: "elogse04dn",
+  // database: "postgres",
 });
 
 let messages = [
@@ -14,10 +15,10 @@ let messages = [
     text: "Hello Word",
     creator_by_id: 2,
     channel_id: 5,
-    created_at: " ", // aca iria la hora o el dia?
+    created_at: " ", // aca iria la hora o el dia? ambos despues de que pase mas de un dia aparce la fecha y fue
   },
 ];
-
+console.log("hasta aca corre");
 client
   .connect()
   .then(() => console.log("connected"))
