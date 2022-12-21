@@ -63,10 +63,10 @@ client
       const channels = await selectAllChannels();
       res.json(channels);
     });
-    // app.get("/channels:id", (req, res) => {
-    //   selectChannel(req.params.id);
-    //   res.send();
-    // });
+    app.get("/channels:id", async (req, res) => {
+      const chat = await selectChannel(req.params.id);
+      res.send(chat);
+    });
 
     app.listen(PORT, () => console.log("server is listening on port " + PORT));
   })
