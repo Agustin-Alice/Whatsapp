@@ -31,15 +31,17 @@ const selectAllChannels = async () => {
   return channels.rows;
 };
 
-// const selectChannel = (channel_id) => {
-//   const text = "SELECT * FROM message WHERE channel_id = ($1)";
-//   const id = [channel_id];
-//   client
-//     .query(text, id)
-//     .then((res) => res.send(res.rows))
-//     .catch((e) => console.error(e.stack))
-//     .then(() => client.end());
-// };
+const selectChannel = async (channel_id) => {
+  const text = "SELECT * FROM messages WHERE channel_id = ($1)";
+  const id = [channel_id];
+  let chat = "";
+  try {
+    chat = await client.query(text, id);
+  } catch (e) {
+    console.error(e.stack);
+  }
+  return chat.rows;
+};
 
 client
   .connect()
@@ -63,9 +65,9 @@ client
       const channels = await selectAllChannels();
       res.json(channels);
     });
-    app.get("/channels:id", async (req, res) => {
+    app.get("/messages/:id", async (req, res) => {
       const chat = await selectChannel(req.params.id);
-      res.send(chat);
+      res.json(chat);
     });
 
     app.listen(PORT, () => console.log("server is listening on port " + PORT));
