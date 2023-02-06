@@ -1,4 +1,4 @@
-.topRight {
+.topbarchannel {
     display: flex;
     height: 40px;
     width: 100%;
@@ -33,24 +33,36 @@
     
     
 }
-.backbutton {
-    height: 100% ;
+.backButton {
+    display: flex;
+    height: 45px ;
     width: 40px;
-    padding: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.icon {
+    height: 18px;
+    width: 18px;
+    color: var(--iconcolor)
+}
 .contactInfo {
     display: inline-block;
     height: 100%;
     width: 50%;
-    /* border-right: 1px solid rgb(120, 60,0) ; */
+    flex: 1;
+    min-width: 80px;  
 }
 
 .calls {
-    display: inline-block;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
     height: 100%;
-    width: 50%;
-    text-align: right;
-    
-    /* border-left: 1px solid rgb(60,120,0) */
+    align-items: center;
+    justify-content: right;
+    border-left: 1px solid rgb(60,120,0) 
 }

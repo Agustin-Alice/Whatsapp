@@ -1,0 +1,34 @@
+.chat {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.message{
+    display: inline;
+    align-self: flex-end;
+    border-radius: 4px;
+    background-color: orange;
+    margin-top: 2px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.nomymessage {
+    display: inline;
+    align-self: flex-start;
+    border-radius: 4px;
+    background-color: blue;
+    margin-top: 2px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1px 20px;
+    
+}

@@ -1,10 +1,8 @@
-
-.contacts{
+.channelslist{
     display: flex;
     flex-direction: column;
-    
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
     background-color: rgb(17, 36, 17);
+    overflow-y: scroll;
 }

@@ -10,7 +10,7 @@ const client = new Client({
 });
 const insertMessage = async (body) => {
   const text =
-    "INSERT INTO messages (id,text,creator_by_id,channel_id) VALUES ($1, $2, $3, $4) returning *";
+    "INSERT INTO messages (id,text,creator_by_id,channel_id) VALUES ($1, $2, $3, $4)";
   const values = [body.id, body.text, body.creator_by_id, body.channel_id];
   try {
     await client.query(text, values);

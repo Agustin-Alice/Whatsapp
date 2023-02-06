@@ -1,10 +1,11 @@
 
 .Topbar {
-    display: block;
+    display: flex;
     height: 40px;
     width: 100%;
     background-color: rgb(120, 120, 120);
-    text-align: right;
+    align-items: center;
+    justify-content: right
     
 }
 .avatar {
@@ -13,10 +14,19 @@
     width: 36px;
     border-radius: 50%;
     background-color: grey;
-    background-image: url('Whatsapp.jpeg');
+    /* background-image: url('Whatsapp.jpeg'); */
     background-size: cover;
     display: inline-block;
     box-sizing: border-box;
     /* background-position: center; */
     
+}
+.backButton {
+    display: flex;
+    height: 45px ;
+    width: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }

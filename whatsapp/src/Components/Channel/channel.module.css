@@ -5,31 +5,46 @@
     width: 36px;
     border-radius: 50%;
     background-color: grey;
-    background-image: url('Whatsapp.jpeg');
+    /* background-image: url('Whatsapp.jpeg'); */
     background-size: cover;
     display: inline-block;
     box-sizing: border-box;
-    /* background-position: center; */
-    
+
 }
 .avatarBack {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 60px;
     padding: 10px 10px;
     box-sizing: border-box;
-    
-    
 }
 
-.contact{
+.searchText {
+    color: red;
+}
+
+.text{
+    color: aliceblue;
+}
+.channel{
     display: flex;
+    flex-direction: row;
     height: 50px;
-    width: auto;
-    
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+.channel:hover{
+    background-color: rgb(40,70,40);
+
 }
 .contactText {
-    display: inline-block;
+    
+    display: flex ;
+    flex-direction:column;
     height: 100%;
     width: 100%;
     border-bottom: 1px solid rgb(120, 120, 120) ;
